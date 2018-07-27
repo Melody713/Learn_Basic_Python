@@ -1,5 +1,5 @@
 import os
-os.chdir('D:\Python\HeadFirstPython\chapter6')
+# os.chdir('D:\Python\HeadFirstPython\chapter6')
 
 # class NamedList(list):
 #     def __init__(self, a_name):
@@ -39,27 +39,27 @@ def sanitize(time_string):
     (mins, secs) = time_string.split(splitter)
     return mins + '.' + secs
 
-def get_coach_data(filename):
-    try:
-        with open(filename) as new_file:
-            #data = new_file.readline()
-            tmp  = new_file.readline().strip().split(',')
-        return AthleteList(tmp.pop(0),tmp.pop(0),tmp)
-        # return data.strip().split(',')
-        # return {'Name':tmp.pop(0),
-        #         'DOB':tmp.pop(0),
-        #         'Times': str(sorted(set([sanitize(t) for t in tmp]))[0:3])}
-    except IOError as err:
-        print('File Error:' + str(err))
-        return None
-james = get_coach_data('james2.txt')
-julie = get_coach_data('julie2.txt')
-mikey = get_coach_data('mikey2.txt')
-sarah = get_coach_data('sarah2.txt')
-print(james.name + "'s fastest times are:" + str(james.top3()))
-print(julie.name + "'s fastest times are:" + str(julie.top3()))
-print(mikey.name + "'s fastest times are:" + str(mikey.top3()))
-print(sarah.name + "'s fastest times are:" + str(sarah.top3()))
+# def get_coach_data(filename):
+#     try:
+#         with open(filename) as new_file:
+#             #data = new_file.readline()
+#             tmp  = new_file.readline().strip().split(',')
+#         return AthleteList(tmp.pop(0),tmp.pop(0),tmp)
+#         # return data.strip().split(',')
+#         # return {'Name':tmp.pop(0),
+#         #         'DOB':tmp.pop(0),
+#         #         'Times': str(sorted(set([sanitize(t) for t in tmp]))[0:3])}
+#     except IOError as err:
+#         print('File Error:' + str(err))
+#         return None
+# james = get_coach_data('james2.txt')
+# julie = get_coach_data('julie2.txt')
+# mikey = get_coach_data('mikey2.txt')
+# sarah = get_coach_data('sarah2.txt')
+# print(james.name + "'s fastest times are:" + str(james.top3()))
+# print(julie.name + "'s fastest times are:" + str(julie.top3()))
+# print(mikey.name + "'s fastest times are:" + str(mikey.top3()))
+# print(sarah.name + "'s fastest times are:" + str(sarah.top3()))
 
 # vera = AthleteList('vera vi')
 # vera.append('1.31')
