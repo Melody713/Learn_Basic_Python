@@ -61,11 +61,13 @@ print(julie.name + "'s fastest times are:" + str(julie.top3()))
 print(mikey.name + "'s fastest times are:" + str(mikey.top3()))
 print(sarah.name + "'s fastest times are:" + str(sarah.top3()))
 
-vera = AthleteList('vera vi')
-vera.append('1.31')
-print(vera.top3())
-vera.extend(['2.22','1-21','2:22'])
-print(vera.top3())
+# vera = AthleteList('vera vi')
+# vera.append('1.31')
+# print(vera.top3())
+# vera.extend(['2.22','1-21','2:22'])
+# print(vera.top3())
+
+
 # def get_coach_data(filename):
 #     try:
 #         with open(filename) as new_file:
