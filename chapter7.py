@@ -1,9 +1,8 @@
-#athletemodel.py
 import pickle
 import os
 from chapter6 import AthleteList
 
-os.chdir('D:\Python\HeadFirstPython\chapter6')
+#os.chdir('D:\Python\HeadFirstPython\chapter6')
 
 def get_coach_data(filename):
     try:

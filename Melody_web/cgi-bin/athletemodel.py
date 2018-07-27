@@ -1,4 +1,3 @@
-#athletemodel.py
 import pickle
 from chapter6 import AthleteList
 
@@ -23,7 +22,7 @@ def put_to_stroe(files_list):
         print('File ERROR(put_to_store):' + str(ioerr))
     return all_athletes
 
-def get_from_store():
+def get_fromm_store():
     all_athletes = {}
     try:
         with open('athletes.pickle', 'rb') as athf:
