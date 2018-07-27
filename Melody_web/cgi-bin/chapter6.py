@@ -19,8 +19,8 @@ class AthleteList(list):
 
     @property
     def top3(self):
-        return(sorted(set([self.sanitize(t) for t in self]))[0:3])
+        return sorted(set([self.sanitize(t) for t in self]))[0:3]
 
     @property
     def clean_data(self):
-        return(sorted(set([self.sanitize(t) for t in self])))
+        return sorted(set([self.sanitize(t) for t in self]))
