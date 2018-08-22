@@ -41,9 +41,4 @@ def header(header_text, header_level=2):
            '</h' + str(header_level) + '>')
 
 def para(para_text):
-    return('<p>' + para_text + '</p>')
-
-def create_inputs(inputs_list):
-    for each_inputs in inputs_list:
-        html_inputs = html_inputs + '<input type="Text" name="'+ each_inputs +'" size="40">'
-    return html_inputs
+    return('<p>' + para_text + '</p>') 
